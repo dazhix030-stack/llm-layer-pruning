@@ -59,3 +59,4 @@ python kv_residual_model.py --model /path/to/Qwen2.5-3B
 - メモリ削減・速度・精度の三立（残差補正に削除層の実行が必要なため計算量は変わらない）
 - KVキャッシュと残差補正の両立
 - llama.cpp での実装（Python API から層単位の残差を取り出せない）
+※ KVキャッシュ有効化により推論速度向上、VRAMは若干増加
