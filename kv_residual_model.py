@@ -5,7 +5,7 @@
 推論時だけVRAMにロードして終わったら解放
 
 使い方:
-  python kv_residual_model.py --model /home/hosokawa_daichi/models/Qwen2.5-3B
+  python kv_residual_model.py "--model /path/to/your/model"
 """
 
 import torch
