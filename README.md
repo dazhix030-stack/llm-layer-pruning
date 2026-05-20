@@ -58,3 +58,4 @@ python kv_residual_model.py --model /path/to/Qwen2.5-3B
 The key insight: in residual networks, each layer's contribution `F(x) = layer(x) - x` can be computed independently and injected into a later layer without retraining. Layers 2, 4, 6, ... 32 (16 of 36 total) are offloaded to disk. Their residuals are computed on-demand and added to the input of the next active layer.
 
 Closest prior work: [KV-Direct (arXiv:2603.19664)](https://arxiv.org/abs/2603.19664) replaces KV cache with residual checkpoints. This repo targets model weights instead.
+For full experiment log, see [EXPERIMENTS.md](EXPERIMENTS.md).
