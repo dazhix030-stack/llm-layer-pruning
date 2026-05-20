@@ -396,7 +396,7 @@ def run(model_name: str):
 if __name__ == "__main__":
     if len(sys.argv) < 3 or sys.argv[1] != "--model":
         print("使い方: python direct_vram_model.py "
-              "--model /home/hosokawa_daichi/models/Qwen2.5-3B")
+              ""--model /path/to/your/model"")
         sys.exit(1)
 
     run(sys.argv[2])
